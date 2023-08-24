@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.196a6f7c.css",
+    "main.js": "/static/js/main.ced46c06.js",
+    "static/js/787.d06b42a6.chunk.js": "/static/js/787.d06b42a6.chunk.js",
+    "static/media/brvkm.png": "/static/media/brvkm.b5e0ce7e819b8616b2a7.png",
+    "static/media/logo.png": "/static/media/logo.09f1694ccb704dd5a267.png",
+    "static/media/raj_haveli.jpg": "/static/media/raj_haveli.3fcf6e8bec98b3be2420.jpg",
+    "static/media/money_india.jpg": "/static/media/money_india.cfd2e0ee2543935dd8c1.jpg",
+    "static/media/dhamalapp.png": "/static/media/dhamalapp.52ce7ec3721cfeab517c.png",
+    "static/media/pura_bazar.png": "/static/media/pura_bazar.d5be979ff223dd0b8b12.png",
+    "static/media/bharovikranti.jpeg": "/static/media/bharovikranti.b170706dcf7113ee9493.jpeg",
+    "static/media/bharovilogo.jpeg": "/static/media/bharovilogo.61b8a70b1d63a7922169.jpeg",
+    "index.html": "/index.html",
+    "main.196a6f7c.css.map": "/static/css/main.196a6f7c.css.map",
+    "main.ced46c06.js.map": "/static/js/main.ced46c06.js.map",
+    "787.d06b42a6.chunk.js.map": "/static/js/787.d06b42a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.196a6f7c.css",
+    "static/js/main.ced46c06.js"
+  ]
+}
