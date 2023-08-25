@@ -1,13 +1,13 @@
-var imgElements = document.getElementsByTagName('img');
+// var imgElements = document.getElementsByTagName('img');
 
-imgElements.forEach((img) {
-  var imgAttr = img.getAttribute('src');
+// imgElements.forEach((img) {
+//   var imgAttr = img.getAttribute('src');
 
-  imgAttr.replace("/bharovikranti/", "");
+//   imgAttr.replace("/bharovikranti/", "");
 
-  img.setAttribute('src', imgAttr);
+//   img.setAttribute('src', imgAttr);
 
-  consol.log(imgAttr);
+//   consol.log(imgAttr);
   
   
-})
+// })
