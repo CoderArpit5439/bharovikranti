@@ -1,13 +1,14 @@
-// var imgElements = document.getElementsByTagName('img');
+var imgElements = document.getElementsByTagName('img');
 
-// imgElements.forEach((img) {
-//   var imgAttr = img.getAttribute('src');
+for(let i of imgElements) {
 
-//   imgAttr.replace("/bharovikranti/", "");
+  var imgAttr = i.getAttribute('src');
 
-//   img.setAttribute('src', imgAttr);
+  var newAttr = imgAttr.replace('/bharovikranti/', '');
 
-//   consol.log(imgAttr);
+  i.setAttribute('src', newAttr);
+
+  console.log(i);
   
-  
-// })
+}
+});
