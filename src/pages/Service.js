@@ -6,6 +6,7 @@ import dhamalapp from '../assets/image/dhamalapp.png'
 import nclogo from '../assets/image/logo.png'
 import rajHaveli from '../assets/image/raj_haveli.jpg'
 import pura_bazar from '../assets/image/pura_bazar.png'
+import bkfnn from '../assets/image/bkfnn.jpg'
 
 const Service = () => {
   return (
@@ -82,7 +83,7 @@ const Service = () => {
    
       <div className="xl:w-1/4 md:w-1/2 p-4 w-full">
         <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-          <img className="h-60 rounded w-full object-cover object-center mb-6" src={bharovilogo} alt="content"/>
+          <img className="h-60 rounded w-full object-cover object-center mb-6" src={bkfnn} alt="content"/>
           <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
           <h2 className="text-lg text-white font-medium title-font mb-4">Bharovi Kranti Foundation News Network</h2>
           <p className="leading-relaxed text-base">All Our India News Agency</p>

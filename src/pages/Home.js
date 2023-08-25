@@ -190,7 +190,7 @@ const Home = () => {
                 <span className="text-sm text-gray-500">Fifteen</span>
               </div>
               <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">Fixed incentive amount 3000 per month</h2>
+                <h2 className="text-2xl font-medium text-white title-font mb-2">Fixed incentive amount 3,000-30,000 per month</h2>
                 <p className="leading-relaxed">Written certificate is given</p>
               </div>
             </div>
