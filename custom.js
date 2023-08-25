@@ -1,7 +1,7 @@
 console.log('custom js loaded');
 
 setTimeout(function() {
-  document.addEventListener('DOMContentLoaded', function () {
+
 
     console.log('DOM LOADED');
 
@@ -23,6 +23,6 @@ setTimeout(function() {
   }
   }
   
-}, false);
+
 
 }, 2000)
