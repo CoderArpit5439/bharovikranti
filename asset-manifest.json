@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bharovikranti/static/css/main.196a6f7c.css",
-    "main.js": "/bharovikranti/static/js/main.510d88d2.js",
-    "static/js/787.d06b42a6.chunk.js": "/bharovikranti/static/js/787.d06b42a6.chunk.js",
-    "static/media/brvkm.png": "/bharovikranti/static/media/brvkm.b5e0ce7e819b8616b2a7.png",
-    "static/media/logo.png": "/bharovikranti/static/media/logo.09f1694ccb704dd5a267.png",
-    "static/media/raj_haveli.jpg": "/bharovikranti/static/media/raj_haveli.3fcf6e8bec98b3be2420.jpg",
-    "static/media/money_india.jpg": "/bharovikranti/static/media/money_india.cfd2e0ee2543935dd8c1.jpg",
-    "static/media/dhamalapp.png": "/bharovikranti/static/media/dhamalapp.52ce7ec3721cfeab517c.png",
-    "static/media/pura_bazar.png": "/bharovikranti/static/media/pura_bazar.d5be979ff223dd0b8b12.png",
-    "static/media/bharovikranti.jpeg": "/bharovikranti/static/media/bharovikranti.b170706dcf7113ee9493.jpeg",
-    "static/media/bharovilogo.jpeg": "/bharovikranti/static/media/bharovilogo.61b8a70b1d63a7922169.jpeg",
-    "index.html": "/bharovikranti/index.html",
-    "main.196a6f7c.css.map": "/bharovikranti/static/css/main.196a6f7c.css.map",
-    "main.510d88d2.js.map": "/bharovikranti/static/js/main.510d88d2.js.map",
-    "787.d06b42a6.chunk.js.map": "/bharovikranti/static/js/787.d06b42a6.chunk.js.map"
+    "main.css": "https://bharovikranti.shop/static/css/main.196a6f7c.css",
+    "main.js": "https://bharovikranti.shop/static/js/main.510d88d2.js",
+    "static/js/787.d06b42a6.chunk.js": "https://bharovikranti.shop/static/js/787.d06b42a6.chunk.js",
+    "static/media/brvkm.png": "https://bharovikranti.shop//static/media/brvkm.b5e0ce7e819b8616b2a7.png",
+    "static/media/logo.png": "https://bharovikranti.shop/static/media/logo.09f1694ccb704dd5a267.png",
+    "static/media/raj_haveli.jpg": "https://bharovikranti.shop/static/media/raj_haveli.3fcf6e8bec98b3be2420.jpg",
+    "static/media/money_india.jpg": "https://bharovikranti.shop/static/media/money_india.cfd2e0ee2543935dd8c1.jpg",
+    "static/media/dhamalapp.png": "https://bharovikranti.shop/static/media/dhamalapp.52ce7ec3721cfeab517c.png",
+    "static/media/pura_bazar.png": "https://bharovikranti.shop/static/media/pura_bazar.d5be979ff223dd0b8b12.png",
+    "static/media/bharovikranti.jpeg": "https://bharovikranti.shop/static/media/bharovikranti.b170706dcf7113ee9493.jpeg",
+    "static/media/bharovilogo.jpeg": "https://bharovikranti.shop/static/media/bharovilogo.61b8a70b1d63a7922169.jpeg",
+    "index.html": "https://bharovikranti.shop/index.html",
+    "main.196a6f7c.css.map": "https://bharovikranti.shop/static/css/main.196a6f7c.css.map",
+    "main.510d88d2.js.map": "https://bharovikranti.shop/static/js/main.510d88d2.js.map",
+    "787.d06b42a6.chunk.js.map": "https://bharovikranti.shop/static/js/787.d06b42a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.196a6f7c.css",
-    "static/js/main.510d88d2.js"
+    "https://bharovikranti.shop/static/css/main.196a6f7c.css",
+    "https://bharovikranti.shop/static/js/main.510d88d2.js"
   ]
 }
