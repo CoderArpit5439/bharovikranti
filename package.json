@@ -1,6 +1,7 @@
 {
   "name": "travel-app",
   "version": "0.1.0",
+  "homepage":"https://CoderArpit5439.gitthub.io",
   "private": true,
   "dependencies": {
     "@iconify/react": "^4.1.1",
