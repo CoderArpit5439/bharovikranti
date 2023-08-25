@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+setTimeout(() {
+  document.addEventListener('DOMContentLoaded', function () {
 
   var imgElements = document.getElementsByTagName('img');
 
@@ -17,3 +18,4 @@ document.addEventListener('DOMContentLoaded', function () {
   
 }, false);
 
+}, 2000)
