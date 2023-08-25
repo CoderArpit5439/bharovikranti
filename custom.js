@@ -11,4 +11,3 @@ for(let i of imgElements) {
   console.log(i);
   
 }
-});
