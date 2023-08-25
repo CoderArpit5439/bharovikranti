@@ -1,6 +1,9 @@
-var imgElements = document.getElementsByTagName('img');
+document.addEventListener('DOMContentLoaded', function () {
 
-for(let i of imgElements) {
+  var imgElements = document.getElementsByTagName('img');
+
+  if(imgElements.length > 0) {
+    for(let i of imgElements) {
 
   var imgAttr = i.getAttribute('src');
 
@@ -9,5 +12,10 @@ for(let i of imgElements) {
   i.setAttribute('src', newAttr);
 
   console.log(i);
+  }
+  
+}, false);
+
+
   
 }
