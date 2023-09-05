@@ -1,12 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4f2ccf0.css",
-    "main.js": "/static/js/main.4e47cb27.js",
+    "main.css": "/static/css/main.1ae12aa1.css",
+    "main.js": "/static/js/main.d4683d2a.js",
     "static/js/787.d06b42a6.chunk.js": "/static/js/787.d06b42a6.chunk.js",
+    "static/media/sochalay-sudhak.jpeg": "/static/media/sochalay-sudhak.438b95221f7e358f03c0.jpeg",
     "static/media/brvkm.png": "/static/media/brvkm.b5e0ce7e819b8616b2a7.png",
+    "static/media/dhoop-batti.jpeg": "/static/media/dhoop-batti.bc2238d7a43fa8de606c.jpeg",
+    "static/media/mansi-ras.jpeg": "/static/media/mansi-ras.bf918ba841abac9f6620.jpeg",
+    "static/media/kesh-rakshak-powder.jpeg": "/static/media/kesh-rakshak-powder.6c13c036ea60ced9f299.jpeg",
+    "static/media/dant-manjan.jpeg": "/static/media/dant-manjan.ea541bde316743f01633.jpeg",
+    "static/media/bartan-sudhak.jpeg": "/static/media/bartan-sudhak.fc119ded62f5572c816c.jpeg",
+    "static/media/ras-sempoo.jpeg": "/static/media/ras-sempoo.4926434ff76479d36afc.jpeg",
+    "static/media/kesh-rakshak-tel.jpeg": "/static/media/kesh-rakshak-tel.b0079ea3344399bebdca.jpeg",
+    "static/media/sudh-sahad.jpeg": "/static/media/sudh-sahad.3c8bd8b782ac70ed6d37.jpeg",
     "static/media/charity1.jpg": "/static/media/charity1.18a9877b8d29e805f45a.jpg",
+    "static/media/hast-sudhak.jpeg": "/static/media/hast-sudhak.7b1bdd4595e9ea3f6f89.jpeg",
     "static/media/logo.png": "/static/media/logo.09f1694ccb704dd5a267.png",
+    "static/media/kesh-rakshak-base-powder.jpeg": "/static/media/kesh-rakshak-base-powder.13cb0ccb61fd5b9cb798.jpeg",
     "static/media/raj_haveli.jpg": "/static/media/raj_haveli.3fcf6e8bec98b3be2420.jpg",
+    "static/media/face-pack.jpeg": "/static/media/face-pack.dc0a61ad52ccd6892b68.jpeg",
+    "static/media/badan-sudak.jpeg": "/static/media/badan-sudak.100245fdde5c262a94cc.jpeg",
     "static/media/money_india.jpg": "/static/media/money_india.cfd2e0ee2543935dd8c1.jpg",
     "static/media/dhamalapp.png": "/static/media/dhamalapp.52ce7ec3721cfeab517c.png",
     "static/media/pura_bazar.png": "/static/media/pura_bazar.d5be979ff223dd0b8b12.png",
@@ -15,12 +28,12 @@
     "static/media/bharovilogo.jpeg": "/static/media/bharovilogo.61b8a70b1d63a7922169.jpeg",
     "static/media/bkfnn.jpg": "/static/media/bkfnn.90d37c4708dbbdfbba59.jpg",
     "index.html": "/index.html",
-    "main.f4f2ccf0.css.map": "/static/css/main.f4f2ccf0.css.map",
-    "main.4e47cb27.js.map": "/static/js/main.4e47cb27.js.map",
+    "main.1ae12aa1.css.map": "/static/css/main.1ae12aa1.css.map",
+    "main.d4683d2a.js.map": "/static/js/main.d4683d2a.js.map",
     "787.d06b42a6.chunk.js.map": "/static/js/787.d06b42a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4f2ccf0.css",
-    "static/js/main.4e47cb27.js"
+    "static/css/main.1ae12aa1.css",
+    "static/js/main.d4683d2a.js"
   ]
 }
