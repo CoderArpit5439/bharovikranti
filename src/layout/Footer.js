@@ -58,7 +58,7 @@ const Footer = () => {
   </div>
   <div className="bg-gray-800 bg-opacity-75">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-400 text-sm">Create by Arpit sharma</span>
+      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-400 text-sm">Created by Sitent Web & Graphics Design</span>
     </div>
   </div>
 </footer>
