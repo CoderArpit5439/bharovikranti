@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({language}) => {
   return (
     <footer className="text-gray-400 bg-gray-900 body-font">
   <div className="container px-5 mx-auto">
@@ -9,19 +9,19 @@ const Footer = () => {
     <div class="flex flex-wrap -m-4 text-center">
       <div class="p-4 sm:w-1/4 w-1/2">
         <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">12.7K</h2>
-        <p class="leading-relaxed">Users</p>
+        <p class="leading-relaxed">{language ? "Users" : "उपयोगकर्ता"}</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
         <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">9.8K</h2>
-        <p class="leading-relaxed">Subscribes</p>
+        <p class="leading-relaxed">{language ? "Subscribes" : "सब्सक्राइब"}</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
         <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">5.7K</h2>
-        <p class="leading-relaxed">Downloads</p>
+        <p class="leading-relaxed">{language ? "Downloads" : "डाउनलोड"}</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
         <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">26</h2>
-        <p class="leading-relaxed">Products</p>
+        <p class="leading-relaxed">{language ? "Products" : "उत्पाद"}</p>
       </div>
     </div>
   </div>

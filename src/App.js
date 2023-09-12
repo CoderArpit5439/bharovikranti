@@ -10,18 +10,18 @@ import Products from './pages/Products';
 import { useState } from 'react';
 
 function App() {
-  const [language,setLanguage] = useState("eng") 
+  const [language,setLanguage] = useState(true) 
   return (
     <div>
       <Header language={language} setLanguage={setLanguage}/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/services' element={<Service />} />
-        <Route path='/about' element={<Aboutus />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/products' element={<Products />} />
+        <Route path='/' element={<Home language={language} />} />
+        <Route path='/services' element={<Service language={language} />} />
+        <Route path='/about' element={<Aboutus language={language} />} />
+        <Route path='/contact' element={<Contact language={language} />} />
+        <Route path='/products' element={<Products language={language} />} />
       </Routes>
-      <Footer />
+      <Footer language={language} />
     </div>
   );
 }
