@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = ({language}) => {
   return (
-    <footer className="text-gray-400 bg-gray-900 body-font">
+    <footer className="text-gray-400 bg-gradient-to-r from-purple-500 to-pink-500 body-font pt-4">
   <div className="container px-5 mx-auto">
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section class="text-gray-400 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4 text-center">
       <div class="p-4 sm:w-1/4 w-1/2">

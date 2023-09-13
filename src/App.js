@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Footer from './layout/Footer';
 import Products from './pages/Products';
 import { useState } from 'react';
+import DigitalMoney from './pages/DigitalMoney';
 
 function App() {
   const [language,setLanguage] = useState(true) 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' element={<Aboutus language={language} />} />
         <Route path='/contact' element={<Contact language={language} />} />
         <Route path='/products' element={<Products language={language} />} />
+        <Route path='/digital_money' element={<DigitalMoney language={language}/>} />
       </Routes>
       <Footer language={language} />
     </div>

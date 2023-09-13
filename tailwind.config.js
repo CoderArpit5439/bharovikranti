@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: {
-    relative: true,
-    transform: (content) => content.replace(/taos:/g, ''),
-    files: ['./src/**/*.{html,js}'],
-  },
+  content: ['./src/**/*.{html,js}',
+  'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+  ]
+  ,
   theme: {
     extend: {},
   },
   plugins: [
-    require('taos/plugin')
+    require('taos/plugin'),
+    require('flowbite/plugin')
   ],
   safelist: [
     '!duration-[0ms]',

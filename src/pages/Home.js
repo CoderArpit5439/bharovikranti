@@ -1,202 +1,113 @@
 import React from 'react'
-import image1 from '../assets/image/money_india.jpg'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
-const Home = ({language}) => {
+const Home = ({ language }) => {
   const navigate = useNavigate()
   return (
-    <div>
+    <div className='bg-gradient-to-r from-purple-500 to-pink-500'>
 
-<section class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-      <img class="object-cover object-center rounded" alt="hero" src={image1}/>
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{language ? "Digital Media Education Course" : "डिजिटल मीडिया शिक्षा पाठ्यक्रम"}
-      </h1>
-      <p class="mb-8 leading-relaxed">{language?"Women, Men, Students and any other person can earn money by training sitting at home." : "महिला, पुरुष, विद्यार्थी एवं कोई भी व्यक्ति घर बैठे प्रशिक्षण लेकर पैसा कमा सकता है।"}</p>
-      <div class="flex justify-center">
-        <button onClick={() => navigate('/contact')} class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"  >{language ? "Contact Us Now We are available 24/7" : "अभी हमसे संपर्क करें हम 24/7 उपलब्ध हैं"}</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <section className="text-white body-font overflow-hidden bg-gray-900">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="-my-8 divide-y-2 divide-gray-100">
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="mt-1 text-gray-500 text-sm">First</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "Social Media Income Plan":"सोशल मीडिया आय योजना"}</h2>
-                <p className="leading-relaxed">{language ? "What is social media": "सोशल मीडिया क्या है"} </p>
-                <p className="leading-relaxed">{language ? "what awards do you get" : "आपको कौन से पुरस्कार मिलते हैं"} </p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="mt-1 text-gray-500 text-sm">Second</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "What Work To Do": "क्या काम करना है"}</h2>
-                <p className="leading-relaxed">{language ? "How to edit part time or full time video" : "पार्ट टाइम या फुल टाइम वीडियो कैसे एडिट करें"}</p>
-                <p className="leading-relaxed">{language ? "and on which application" : "और किस एप्लीकेशन पर"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Third</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How To Earn Money From Facebook" : "फेसबुक से पैसे कैसे कमाए"}</h2>
-                <p className="leading-relaxed">{language ? "How and on which application do you type" : "आप कैसे और किस एप्लीकेशन पर टाइप करते हैं"} </p>
-                <p className="leading-relaxed">{language ? "the main information of Facebook?" : "फेसबुक की मुख्य जानकारी?"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Fourth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How To Earn Money From Instagram" : "इंस्टाग्राम से पैसे कैसे कमाए"}</h2>
-                <p className="leading-relaxed">{language ? "Main information of Instagram" : "इंस्टाग्राम की मुख्य जानकारी"}</p>
-                <p className="leading-relaxed">{language ? "How to make instagram post":"इंस्टाग्राम पोस्ट कैसे बनाये"}</p>
-                <p className="leading-relaxed">{language ? "On which application the post is created":"पोस्ट किस एप्लीकेशन पर बनाई गई है"}</p>
-                <p className="leading-relaxed">{language ?"How to earn money from instagram" : "इंस्टाग्राम से पैसे कैसे कमाए"}</p>
-
-
-
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Fifth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How To Grow Youtube Channel?" : "यूट्यूब चैनल कैसे बढ़ाएं?"}</h2>
-                <p className="leading-relaxed">{language ? "Creating and Running a YouTube Channel" :"YouTube चैनल बनाना और चलाना"}</p>
-                <p className="leading-relaxed">{language ? "How to upload video and what are the problems in uploading" : "वीडियो कैसे अपलोड करें और अपलोड करने में क्या दिक्कतें आती हैं"}</p>
-                <p className="leading-relaxed">{language ? "How to grow youtube channel" : "यूट्यूब चैनल कैसे बढ़ाएं"}</p>
-                <p className="leading-relaxed">{language ? "Youtube video not uploading" : "यूट्यूब वीडियो अपलोड नहीं हो रहा"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Sixth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How To Earn Money From YouTube" : "यूट्यूब से पैसे कैसे कमाए"}</h2>
-                <p className="leading-relaxed">{language ? "Youtube specsification":"यूट्यूब विशिष्टता"}</p>
-                <p className="leading-relaxed">{language ? "How to edit youtube video" : "यूट्यूब वीडियो कैसे एडिट करें"}</p>
-                <p className="leading-relaxed">{language ? "By which application do you make": "आप कौन सा एप्लीकेशन बनाते हैं"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Seventh</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "What Is Social Media Marketing" : "सोशल मीडिया मार्केटिंग क्या है"}</h2>
-                <p className="leading-relaxed">{language ? "How does this work" : "कैसे यह काम करता है"}</p>
-                <p className="leading-relaxed">{language ? "How is the income" : "आमदनी कैसी है"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Eightth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How social media ads are run" : "सोशल मीडिया विज्ञापन कैसे चलाए जाते हैं"}</h2>
-                <p className="leading-relaxed">{language ? "Why do people give ads on social media?" : "लोग सोशल मीडिया पर विज्ञापन क्यों देते हैं?"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Ninth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How to increase views on youtube" : "यूट्यूब पर व्यूज कैसे बढ़ाएं"}</h2>
-                <p className="leading-relaxed">{language ? "Why youtube channel is not growing" : "यूट्यूब चैनल ग्रो क्यों नहीं हो रहा है?"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Tenth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How to earn from Facebook page and Instagram page": "फेसबुक पेज और इंस्टाग्राम पेज से कमाई कैसे करें"}</h2>
-                <p className="leading-relaxed">{language ? "How to make a good facebook page and instagram page" : "एक अच्छा फेसबुक पेज और इंस्टाग्राम पेज कैसे बनाएं"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Eleventh</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "When and how much and how income comes from youtube":"यूट्यूब से कब और कितनी और कैसे इनकम होती है"}</h2>
-                <p className="leading-relaxed">{language ? "what we do that earn income from youtube" : "हम क्या करते हैं कि यूट्यूब से इनकम होती है"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Twelth</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "What is DHAMAAL app ?" : "धमाल ऐप क्या है?"}</h2>
-                <p className="leading-relaxed">{language ? "When is the income from Dhamaal app" : "धमाल ऐप से इनकम कब होती है"}</p>
-                <p className="leading-relaxed">{language ? "How and how much is the income from Dhamaal app" : "धमाल ऐप से इनकम कैसे और कितनी होती है"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Thirteen</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How to understand and solve the technical problems ?" : "तकनीकी समस्याओं को कैसे समझें और हल करें?"}</h2>
-                <p className="leading-relaxed">{language ? "Youtube, Facebook, Instagram solve the technical problems" : "यूट्यूब, फेसबुक, इंस्टाग्राम तकनीकी समस्याओं का समाधान करते हैं"}</p>
-                <p className="leading-relaxed"> {language ? "How to understand and solve the technical problems of Dhamaal App, Bharovi Kranti India" : "धमाल ऐप, भरोवी क्रांति इंडिया की तकनीकी समस्याओं को कैसे समझें और हल करें"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Forteen</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "How to withdraw money from social media, what is the process": "सोशल मीडिया से पैसे कैसे निकालें, क्या है प्रक्रिया?"}</h2>
-                <p className="leading-relaxed">{language ? "Withdraw money from Youtube, Facebook, Instagram " : "यूट्यूब, फेसबुक, इंस्टाग्राम से पैसे निकालें"}</p>
-                <p className="leading-relaxed">{language ? "What is the process of Withdraw money on Dhamaal App, Bharovi Kranti India" : "धमाल ऐप, भरोवी क्रांति इंडिया पर पैसे निकालने की प्रक्रिया क्या है"}</p>
-              </div>
-            </div>
-            <div className="py-8 flex flex-wrap md:flex-nowrap">
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-white">CLASS</span>
-                <span className="text-sm text-gray-500">Fifteen</span>
-              </div>
-              <div className="md:flex-grow mx-5">
-                <h2 className="text-2xl font-medium text-white title-font mb-2">{language ? "Fixed incentive amount 3,000-30,000 per month" : "प्रोत्साहन राशि 3,000-30,000 प्रति माह निर्धारित"}</h2>
-                <p className="leading-relaxed">{language ? "Written certificate is given" : " लिखित प्रमाण पत्र दिया जाता है"}</p>
-              </div>
-            </div>
+      <div id="default-carousel" className="relative w-full " data-carousel="slide">
+        <div className="relative h-72 overflow-hidden md:h-96">
+          <div className=" duration-700 ease-in-out" data-carousel-item>
+            <img src="https://media.istockphoto.com/id/1334681862/photo/indian-couple-in-traditional-wedding-event-very-beautiful-moment.webp?b=1&s=612x612&w=0&k=20&c=s_S0_DlgjeVek8EjGfM4XBvOGDvjAcx-9U4ez1AAu10=" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div className=" duration-700 ease-in-out" data-carousel-item>
+            <img src="https://media.istockphoto.com/id/1321754984/photo/attractive-happy-north-indian-couple-in-traditional-dress.webp?b=1&s=170667a&w=0&k=20&c=M-0Y8a3LK6Y_SuiuPgH34Ix6wItESkJ4Ro1bVKFiIWQ=" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div className=" duration-700 ease-in-out" data-carousel-item>
+            <img src="https://media.istockphoto.com/id/1215100038/photo/indian-engagement.webp?b=1&s=170667a&w=0&k=20&c=W-7MhCVyulMdiPZ5Wv7527I9f9i3XXp45SeeF6LU1js=" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div className=" duration-700 ease-in-out" data-carousel-item>
+            <img src="https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZyUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          </div>
+          <div className=" duration-700 ease-in-out" data-carousel-item>
+            <img src="https://images.unsplash.com/photo-1616165415772-f5b95c3ae135?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZyUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
         </div>
-      </section>
+        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+            </svg>
+            <span className="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+            </svg>
+            <span className="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+
+      <div className="block max-w-sm p-6 mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{language ? "Welcome to Bharovi Kranti Family" : "भारोवि क्रांति परिवार में आपका स्वागत है"}</h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">{language ? "At Bharovi Kranti Family, we understand that finding the right partner and building a strong, fulfilling relationship is a journey that requires careful consideration, empathy, and support. We are dedicated to being your trusted companion on this remarkable journey, guiding you through the complexities of relationships and helping you create a bond that stands the test of time." : "भरोवी क्रांति परिवार में, हम समझते हैं कि सही साथी ढूंढना और एक मजबूत, संतुष्टिदायक रिश्ता बनाना एक ऐसी यात्रा है जिसके लिए सावधानीपूर्वक विचार, सहानुभूति और समर्थन की आवश्यकता होती है। हम इस उल्लेखनीय यात्रा में आपके भरोसेमंद साथी बनने, रिश्तों की जटिलताओं के माध्यम से आपका मार्गदर्शन करने और समय की कसौटी पर खरा उतरने वाला बंधन बनाने में आपकी मदद करने के लिए समर्पित हैं।"}</p>
+      </div>
+
+
+      <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div>
+          <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="" />
+        </div>
+        <div className="p-5">
+          <div>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{language ? "Privacy and Security" : "गोपनीयता और सुरक्षा"}</h5>
+          </div>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{language ? "We prioritize your privacy and security, employing the latest technology to safeguard your personal information. Your journey with us is confidential, allowing you to explore connections with peace of mind" : "हम आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए नवीनतम तकनीक का उपयोग करते हुए आपकी गोपनीयता और सुरक्षा को प्राथमिकता देते हैं। हमारे साथ आपकी यात्रा गोपनीय है, जिससे आप मन की शांति के साथ संबंधों का पता लगा सकते हैं"}</p>
+          <Link to='/contact' className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            {language ? "Registration Form" : "पंजीकरण फॉर्म"}
+            <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+
+      <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div>
+          <img className="rounded-t-lg object-contain" src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3VwcG9ydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+        </div>
+        <div className="p-5">
+          <div>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{language ? "Comprehensive Support" : "व्यापक समर्थन"}</h5>
+          </div>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{language ? "Our commitment doesn't end at matchmaking. We are here for you every step of the way – before, during, and after marriage. From offering advice on communication and conflict resolution to providing a safe space for discussing concerns, we are your dedicated support system." : "हमारी प्रतिबद्धता मंगनी पर ख़त्म नहीं होती. हम हर कदम पर आपके लिए यहां हैं - शादी से पहले, शादी के दौरान और बाद में। संचार और संघर्ष समाधान पर सलाह देने से लेकर चिंताओं पर चर्चा के लिए एक सुरक्षित स्थान प्रदान करने तक, हम आपकी समर्पित सहायता प्रणाली हैं।"}</p>
+          <Link to='/contact' className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            {language ? "Registration Form" : "पंजीकरण फॉर्म"}
+            <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+
+      <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div>
+          <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1553484771-11998c592b9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXhwZXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" />
+        </div>
+        <div className="p-5">
+          <div>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{language ? "Expert Guidance" : "विशेषज्ञ मार्गदर्शन"}</h5>
+          </div>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{language ? "Our team of experienced relationship counselors and experts is here to offer valuable insights and guidance. Whether you're navigating the early stages of a relationship or seeking advice on strengthening your bond, our experts are just a message away." : "अनुभवी संबंध परामर्शदाताओं और विशेषज्ञों की हमारी टीम बहुमूल्य अंतर्दृष्टि और मार्गदर्शन प्रदान करने के लिए यहां है। चाहे आप किसी रिश्ते के शुरुआती चरण में काम कर रहे हों या अपने बंधन को मजबूत करने के लिए सलाह ले रहे हों, हमारे विशेषज्ञ बस एक संदेश दूर हैं।"}</p>
+          <Link to='/contact' className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            {language ? "Registration Form" : "पंजीकरण फॉर्म"}
+            <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

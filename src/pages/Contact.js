@@ -26,100 +26,100 @@ const Contact = ({ language }) => {
     var url = "https://wa.me/9644325057?text="
       + "*Name :* " + name + "%0a"
       + "*Phone :* " + contactNumber + "%0a"
-      + "Address :* " + address + "%0a"
-      + "Category :* " + category + "%"
-      + "Education :* " + education + "%0a"
-      + "Manglik :* " + manglik + "%0a"
-      + "Marital Status :* " + marrideStatus + "%0a"
-      + "Date of Birth :* " + dob + "%0a"
-      + "Occupation :* " + occupation + "%0a"
-      + "Annual Income :* " + annualIncome + "%0a"
+      + "*Address :* " + address + "%0a"
+      + "*Category :* " + category + "%0a"
+      + "*Education :* " + education + "%0a"
+      + "*Manglik :* " + manglik + "%0a"
+      + "*Marital Status :* " + marrideStatus + "%0a"
+      + "*Date of Birth :* " + dob + "%0a"
+      + "*Occupation :* " + occupation + "%0a"
+      + "*Annual Income :* " + annualIncome + "%0a"
       + "*Birth Time :* " + birthTime + "%0a"
-      + "Height :* " + height + "%0a"
-      + "Religion :*" + religion + "%0a"
-      + "Sister and Brother :*" + sisAndBro + "%0a"
+      + "*Height :* " + height + "%0a"
+      + "*Religion :*" + religion + "%0a"
+      + "*Sister and Brother :*" + sisAndBro + "%0a"
 
     window.open(url, '_blank').focus();
   }
   return (
     <div>
-      <section className="text-gray-400 bg-gray-900 body-font relative">
+      <section className="text-gray-400 bg-gradient-to-r from-pink-500 to-yellow-500 body-font relative">
         <h1 className='text-white text-3xl ml-4 px-4 py-4 ' >
-          Contact Form
+          {language ? "Registration Form" : "पंजीकरण फॉर्म"}
         </h1>
         <form className='mx-10' onSubmit={handleSubmit(onSubmit)}>
           <div className="grid md:grid-cols-3 md:gap-6">
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="name" className="leading-7 text-sm text-gray-400 ">{language ? "Full Name" : "पूरा नाम"} <span className='text-red-500'>*</span></label>
-              <input type="text" {...register("name", { required: true })} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="name" className="leading-7 text-sm font-bold text-gray-800 ">{language ? "Full Name" : "पूरा नाम"} <span className='text-red-500'>*</span></label>
+              <input type="text" {...register("name", { required: true })} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               {errors.name && <span className="text-red-300">Please enter name</span>}
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_last_name" className="leading-7 text-sm text-gray-400">{language ? "Contact Number" : "मोबाइल नंबर"}      <span className='text-red-500'>*</span></label>
-              <input type="text" {...register("contactNumber", { required: true })} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_last_name" className="leading-7 text-sm font-bold text-gray-800">{language ? "Contact Number" : "मोबाइल नंबर"}      <span className='text-red-500'>*</span></label>
+              <input type="text" {...register("contactNumber", { required: true })} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               {errors.contactNumber && <p className="text-red-300">Invalid Phone</p>}
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_company" className="leading-7 text-sm text-gray-400">{language ? "Address" : "पता"} <span className='text-red-500'>*</span></label>
-              <input type="text" {...register("address", { required: true })} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_company" className="leading-7 text-sm font-bold text-gray-800">{language ? "Address" : "पता"} <span className='text-red-500'>*</span></label>
+              <input type="text" {...register("address", { required: true })} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               {errors.address && <span className="text-red-300">Please enter address</span>}
             </div>
           </div>
           <div className="grid md:grid-cols-3 md:gap-6">
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_last_name" className="leading-7 text-sm text-gray-400">{language ? "Date of Birth" : "जन्म की तारीख"} <span className='text-red-500'>*</span></label>
-              <input type="date" {...register("dob", { required: true })} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_last_name" className="leading-7 text-sm font-bold text-gray-800">{language ? "Date of Birth" : "जन्म की तारीख"} <span className='text-red-500'>*</span></label>
+              <input type="date" {...register("dob", { required: true })} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_phone" className="leading-7 text-sm text-gray-400">{language ? "Time of Birth" : "जन्म का समय"} <span className='text-red-500'>*</span></label>
-              <input type="time" {...register("birthTime")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_phone" className="leading-7 text-sm font-bold text-gray-800">{language ? "Time of Birth" : "जन्म का समय"} <span className='text-red-500'>*</span></label>
+              <input type="time" {...register("birthTime")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_company" className="leading-7 text-sm text-gray-400">{language ? "Place of Birth" : "जन्म स्थान"} <span className='text-red-500'>*</span></label>
-              <input type="text" {...register("placeBirth")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-          </div>
-          <div className="grid md:grid-cols-3 md:gap-6">
-            <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_last_name" className="leading-7 text-sm text-gray-400">{language ? "Height" : "ऊंचाई"} <span className='text-red-500'>*</span></label>
-              <input type="text" {...register("height")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_phone" className="leading-7 text-sm text-gray-400">{language ? "Religion" : "धर्म"} <span className='text-red-500'>*</span></label>
-              <input type="text"  {...register("religion")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_company" className="leading-7 text-sm text-gray-400">{language ? "Caterogy" : "वर्ग"} <span className='text-red-500'>*</span></label>
-              <input type="text" {...register("category")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_company" className="leading-7 text-sm font-bold text-gray-800">{language ? "Place of Birth" : "जन्म स्थान"} <span className='text-red-500'>*</span></label>
+              <input type="text" {...register("placeBirth")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
           </div>
           <div className="grid md:grid-cols-3 md:gap-6">
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_last_name" className="leading-7 text-sm text-gray-400">{language ? "Total Brother & Sister" : "कुल भाई और बहन"} <span className='text-red-500'>*</span></label>
-              <input type="text"  {...register("sisAndBro")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_last_name" className="leading-7 text-sm font-bold text-gray-800">{language ? "Height" : "ऊंचाई"} <span className='text-red-500'>*</span></label>
+              <input type="text" {...register("height")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_phone" className="leading-7 text-sm text-gray-400">{language ? "Manglik" : "मांगलिक"} <span className='text-red-500'>*</span></label>
-              <select  {...register("manglik")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              <label htmlFor="floating_phone" className="leading-7 text-sm font-bold text-gray-800">{language ? "Religion" : "धर्म"} <span className='text-red-500'>*</span></label>
+              <input type="text"  {...register("religion")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            </div>
+            <div className="relative z-0 w-full mb-6 group">
+              <label htmlFor="floating_company" className="leading-7 text-sm font-bold text-gray-800">{language ? "Caterogy" : "वर्ग"} <span className='text-red-500'>*</span></label>
+              <input type="text" {...register("category")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 md:gap-6">
+            <div className="relative z-0 w-full mb-6 group">
+              <label htmlFor="floating_last_name" className="leading-7 text-sm font-bold text-gray-800">{language ? "Total Brother & Sister" : "कुल भाई और बहन"} <span className='text-red-500'>*</span></label>
+              <input type="text"  {...register("sisAndBro")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            </div>
+            <div className="relative z-0 w-full mb-6 group">
+              <label htmlFor="floating_phone" className="leading-7 text-sm font-bold text-gray-800">{language ? "Manglik" : "मांगलिक"} <span className='text-red-500'>*</span></label>
+              <select  {...register("manglik")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 <option value="">Select</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
               </select>
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_company" className="leading-7 text-sm text-gray-400">{language ? "Education" : "शिक्षा"} <span className='text-red-500'>*</span></label>
-              <input type="text"  {...register("education")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_company" className="leading-7 text-sm font-bold text-gray-800">{language ? "Education" : "शिक्षा"} <span className='text-red-500'>*</span></label>
+              <input type="text"  {...register("education")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
           </div>
 
           <div className="grid md:grid-cols-3 md:gap-6">
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_last_name" className="leading-7 text-sm text-gray-400">{language ? "Annual Income" : "वार्षिक आय"} <span className='text-red-500'>*</span></label>
-              <input type="text"  {...register("annualIncome")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_last_name" className="leading-7 text-sm font-bold text-gray-800">{language ? "Annual Income" : "वार्षिक आय"} <span className='text-red-500'>*</span></label>
+              <input type="text"  {...register("annualIncome")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_phone" className="leading-7 text-sm text-gray-400">{language ? "Marital Status" : "वैवाहिक स्थिति"} <span className='text-red-500'>*</span></label>
-              <select  {...register("marrideStatus")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              <label htmlFor="floating_phone" className="leading-7 text-sm font-bold text-gray-800">{language ? "Marital Status" : "वैवाहिक स्थिति"} <span className='text-red-500'>*</span></label>
+              <select  {...register("marrideStatus")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 <option value="">Select</option>
                 <option value="Single">Single</option>
                 <option value="Married">Married</option>
@@ -128,8 +128,8 @@ const Contact = ({ language }) => {
               </select>
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <label htmlFor="floating_company" className="leading-7 text-sm text-gray-400">{language ? "Occupation" : "पेशा"} <span className='text-red-500'>*</span></label>
-              <input type="text"  {...register("occupation")} className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <label htmlFor="floating_company" className="leading-7 text-sm font-bold text-gray-800">{language ? "Occupation" : "पेशा"} <span className='text-red-500'>*</span></label>
+              <input type="text"  {...register("occupation")} className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
           </div>
 
