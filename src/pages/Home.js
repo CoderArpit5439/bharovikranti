@@ -1,59 +1,44 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+// import { Carousel } from 'flowbite-react'
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css'; 
 
 const Home = ({ language }) => {
   const navigate = useNavigate()
   return (
     <div className='bg-gradient-to-r from-purple-500 to-pink-500'>
-
-      <div id="default-carousel" className="relative w-full " data-carousel="slide">
         <div className="relative h-72 overflow-hidden md:h-96">
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <img src="https://media.istockphoto.com/id/1334681862/photo/indian-couple-in-traditional-wedding-event-very-beautiful-moment.webp?b=1&s=612x612&w=0&k=20&c=s_S0_DlgjeVek8EjGfM4XBvOGDvjAcx-9U4ez1AAu10=" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        <OwlCarousel items={1}  
+          className="owl-theme"  
+          loop
+          margin={100}
+          autoplay ={true}
+          autoplayTimeout={3000} >       
+          <div>
+            <img src="https://media.istockphoto.com/id/1334681862/photo/indian-couple-in-traditional-wedding-event-very-beautiful-moment.webp?b=1&s=612x612&w=0&k=20&c=s_S0_DlgjeVek8EjGfM4XBvOGDvjAcx-9U4ez1AAu10="  alt="..." />
           </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <img src="https://media.istockphoto.com/id/1321754984/photo/attractive-happy-north-indian-couple-in-traditional-dress.webp?b=1&s=170667a&w=0&k=20&c=M-0Y8a3LK6Y_SuiuPgH34Ix6wItESkJ4Ro1bVKFiIWQ=" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          <div>
+            <img src="https://media.istockphoto.com/id/1321754984/photo/attractive-happy-north-indian-couple-in-traditional-dress.webp?b=1&s=170667a&w=0&k=20&c=M-0Y8a3LK6Y_SuiuPgH34Ix6wItESkJ4Ro1bVKFiIWQ="  alt="..." />
           </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <img src="https://media.istockphoto.com/id/1215100038/photo/indian-engagement.webp?b=1&s=170667a&w=0&k=20&c=W-7MhCVyulMdiPZ5Wv7527I9f9i3XXp45SeeF6LU1js=" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          <div>
+            <img src="https://media.istockphoto.com/id/1215100038/photo/indian-engagement.webp?b=1&s=170667a&w=0&k=20&c=W-7MhCVyulMdiPZ5Wv7527I9f9i3XXp45SeeF6LU1js="  alt="..." />
           </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZyUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          
+          <div>
+            <img src="https://images.unsplash.com/photo-1616165415772-f5b95c3ae135?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZyUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="..." />
           </div>
-          <div className=" duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1616165415772-f5b95c3ae135?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZyUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-          </div>
+          </OwlCarousel>
         </div>
-        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        </div>
-        <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
-
       <div className="block max-w-sm p-6 mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{language ? "Welcome to Bharovi Kranti Family" : "भारोवि क्रांति परिवार में आपका स्वागत है"}</h5>
         <p className="font-normal text-gray-700 dark:text-gray-400">{language ? "At Bharovi Kranti Family, we understand that finding the right partner and building a strong, fulfilling relationship is a journey that requires careful consideration, empathy, and support. We are dedicated to being your trusted companion on this remarkable journey, guiding you through the complexities of relationships and helping you create a bond that stands the test of time." : "भरोवी क्रांति परिवार में, हम समझते हैं कि सही साथी ढूंढना और एक मजबूत, संतुष्टिदायक रिश्ता बनाना एक ऐसी यात्रा है जिसके लिए सावधानीपूर्वक विचार, सहानुभूति और समर्थन की आवश्यकता होती है। हम इस उल्लेखनीय यात्रा में आपके भरोसेमंद साथी बनने, रिश्तों की जटिलताओं के माध्यम से आपका मार्गदर्शन करने और समय की कसौटी पर खरा उतरने वाला बंधन बनाने में आपकी मदद करने के लिए समर्पित हैं।"}</p>
       </div>
 
+    <div className='d-flex'> 
+
+    
 
       <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div>
@@ -107,6 +92,8 @@ const Home = ({ language }) => {
             </svg>
           </Link>
         </div>
+      </div>
+
       </div>
     </div>
   )
