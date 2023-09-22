@@ -101,7 +101,7 @@ const Products = () => {
           <div className="flex flex-wrap -m-4">
             {productsArray?.map((pro, i) =>{
         return(
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div  data-aos="fade-left"  className="lg:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="object-contain w-full block" style={{height:"300px"}} src={pro.img}/>
               </a>

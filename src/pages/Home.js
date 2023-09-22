@@ -17,7 +17,7 @@ const Home = ({ language }) => {
           autoplay ={true}
           autoplayTimeout={3000} >       
           <div>
-            <img src="https://media.istockphoto.com/id/1334681862/photo/indian-couple-in-traditional-wedding-event-very-beautiful-moment.webp?b=1&s=612x612&w=0&k=20&c=s_S0_DlgjeVek8EjGfM4XBvOGDvjAcx-9U4ez1AAu10="  alt="..." />
+            <img className='' src="https://media.istockphoto.com/id/1334681862/photo/indian-couple-in-traditional-wedding-event-very-beautiful-moment.webp?b=1&s=612x612&w=0&k=20&c=s_S0_DlgjeVek8EjGfM4XBvOGDvjAcx-9U4ez1AAu10="  alt="..." />
           </div>
           <div>
             <img src="https://media.istockphoto.com/id/1321754984/photo/attractive-happy-north-indian-couple-in-traditional-dress.webp?b=1&s=170667a&w=0&k=20&c=M-0Y8a3LK6Y_SuiuPgH34Ix6wItESkJ4Ro1bVKFiIWQ="  alt="..." />
@@ -31,16 +31,14 @@ const Home = ({ language }) => {
           </div>
           </OwlCarousel>
         </div>
-      <div className="block max-w-sm p-6 mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <div data-aos="fade-left" className="block max-w-full p-6 mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{language ? "Welcome to Bharovi Kranti Family" : "भारोवि क्रांति परिवार में आपका स्वागत है"}</h5>
         <p className="font-normal text-gray-700 dark:text-gray-400">{language ? "At Bharovi Kranti Family, we understand that finding the right partner and building a strong, fulfilling relationship is a journey that requires careful consideration, empathy, and support. We are dedicated to being your trusted companion on this remarkable journey, guiding you through the complexities of relationships and helping you create a bond that stands the test of time." : "भरोवी क्रांति परिवार में, हम समझते हैं कि सही साथी ढूंढना और एक मजबूत, संतुष्टिदायक रिश्ता बनाना एक ऐसी यात्रा है जिसके लिए सावधानीपूर्वक विचार, सहानुभूति और समर्थन की आवश्यकता होती है। हम इस उल्लेखनीय यात्रा में आपके भरोसेमंद साथी बनने, रिश्तों की जटिलताओं के माध्यम से आपका मार्गदर्शन करने और समय की कसौटी पर खरा उतरने वाला बंधन बनाने में आपकी मदद करने के लिए समर्पित हैं।"}</p>
       </div>
 
-    <div className='d-flex'> 
+    <div className='container px-5 py-24 mx-auto flex flex-wrap -m-4'> 
 
-    
-
-      <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div data-aos="fade-left" className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div>
           <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="" />
         </div>
@@ -58,7 +56,7 @@ const Home = ({ language }) => {
         </div>
       </div>
 
-      <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div data-aos="fade-left" className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div>
           <img className="rounded-t-lg object-contain" src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3VwcG9ydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
         </div>
@@ -76,7 +74,7 @@ const Home = ({ language }) => {
         </div>
       </div>
 
-      <div className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div data-aos="fade-left" className="max-w-sm mt-5 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div>
           <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1553484771-11998c592b9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXhwZXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" />
         </div>

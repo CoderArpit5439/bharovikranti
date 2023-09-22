@@ -14,8 +14,11 @@ const Header = ({ language, setLanguage }) => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link to="/" className="flex items-center">
-                <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                <h2 className="text-2xl font-bold">BRVKM & NC</h2>
+                <img src={logo} className="mr-3 h-10 sm:h-9" alt="Flowbite Logo" />
+                <div>
+                <h6 className="text-2xl font-bold">BRVKM</h6>
+                <h6 className="font-bold">copywrite @ naturecare.com</h6>
+                </div>
               </Link>
               <div className="flex items-center lg:order-2">
                 <button onClick={() => setLanguage(!language)} className="text-black bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">{!language ? "English" : "हिंदी"}</button>

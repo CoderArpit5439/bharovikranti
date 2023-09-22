@@ -23,7 +23,7 @@ const Service = ({ language }) => {
             </p>
           </div>
           <div className="flex flex-wrap -m-4 delay-[100ms] duration-[200ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="fade-right" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={nclogo} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -31,7 +31,7 @@ const Service = ({ language }) => {
                 <p className="leading-relaxed text-base">Manufacturing And Marketing</p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="fade-left" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={brvkm} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -39,7 +39,7 @@ const Service = ({ language }) => {
                 <p className="leading-relaxed text-base">Cheritible Trust</p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="flip-left" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-contain object-center mb-6" src={dhamalapp} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -47,7 +47,7 @@ const Service = ({ language }) => {
                 <p className="leading-relaxed text-base">Same As Youtube Platform</p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="flip-right" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={pura_bazar} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -58,7 +58,7 @@ const Service = ({ language }) => {
 
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="zoom-in" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={bharovikranti} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -66,7 +66,7 @@ const Service = ({ language }) => {
                 <p className="leading-relaxed text-base">Cheritible Section Company</p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="zoom-in-left" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={rajHaveli} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -74,7 +74,7 @@ const Service = ({ language }) => {
                 <p className="leading-relaxed text-base">Plot selling And Construction Building</p>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="zoom-out-right" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={bharovilogo} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>
@@ -82,8 +82,7 @@ const Service = ({ language }) => {
                 <p className="leading-relaxed text-base">News Channel</p>
               </div>
             </div>
-
-            <div className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
+            <div data-aos="zoom-out-left" className="xl:w-1/4 md:w-1/2 p-4 w-full delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="300">
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                 <img className="h-60 rounded w-full object-contain object-center mb-6" src={bkfnn} alt="content" />
                 <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Our Foundation</h3>

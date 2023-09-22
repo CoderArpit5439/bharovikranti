@@ -7,11 +7,18 @@ import Aboutus from './pages/Aboutus';
 import Contact from './pages/Contact';
 import Footer from './layout/Footer';
 import Products from './pages/Products';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DigitalMoney from './pages/DigitalMoney';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [language,setLanguage] = useState(true) 
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div>
       <Header language={language} setLanguage={setLanguage}/>
